@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TerrierFin</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>core</name>
+			<type>2</type>
+			<location>/home/bhargava/Downloads/Terrier-1-master/terrier-4.0/terrier-4.0-win/src/core</location>
+		</link>
+	</linkedResources>
+</projectDescription>

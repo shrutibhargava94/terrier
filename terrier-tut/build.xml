@@ -1,0 +1,44 @@
+<project name="terrier-tut" basedir=".">
+    <description>
+        simple example build file
+    </description>
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="bin" location="bin"/>
+  <property name="dist"  location="dist"/>
+  <property name="doc"  location="doc"/>
+  
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${bin}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${bin}" classpath="lib/antlr.jar:lib/log4j-1.2.15.jar:lib/terrier-3.5-core.jar:lib/trove-3.0.3.jar:lib/commons-lang-2.3.jar:lib/hadoop-0.20.2+228-core.jar:lib/trove-2.0.2.jar:lib/snowball-20071024.jar:lib/findbugs-1.3.2-annotations.jar:lib/org.mortbay.jetty-5.1.15.jar:lib/PDFBox-0.6.7a.jar:lib/commons-logging-1.1.2.jar:lib/junit-4.8.1.jar:lib/poi-2.5.1-final-20040804.jar:lib/terrier-3.5-test.jar:lib/winfileopen.jar:lib/fastutil5-5.0.9.jar:lib/servlet-api.jar:lib/tm-extractors-0.4.jar"/>
+  </target>
+
+  <target name="dist" depends="compile"
+        description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}"/>
+
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+    <jar jarfile="${dist}/terrier-tut-${DSTAMP}.jar" basedir="${bin}"/>
+  </target>
+  
+  <target name="javadoc" depends="init" description="generate documentation">
+    <javadoc sourcepath="${src}" destdir="${doc}"/>
+  </target>
+
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${bin}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>

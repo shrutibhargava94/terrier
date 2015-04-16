@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="bin" path="src"/>
+	<classpathentry kind="lib" path="lib/antlr.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/fastutil5-5.0.9.jar"/>
+	<classpathentry kind="lib" path="lib/findbugs-1.3.2-annotations.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-0.20.2+228-core.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.8.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/org.mortbay.jetty-5.1.15.jar"/>
+	<classpathentry kind="lib" path="lib/PDFBox-0.6.7a.jar"/>
+	<classpathentry kind="lib" path="lib/poi-2.5.1-final-20040804.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/snowball-20071024.jar"/>
+	<classpathentry kind="lib" path="lib/tm-extractors-0.4.jar"/>
+	<classpathentry kind="lib" path="lib/trove-2.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/trove-3.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/winfileopen.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="terrier-temp.jar"/>
+	<classpathentry kind="lib" path="timestools.jar"/>
+	<classpathentry kind="lib" path="jedis-2.0.0.jar"/>
+	<classpathentry kind="lib" path="terrier-3.5-core.jar"/>
+	<classpathentry kind="lib" path="terrier-3.5-test.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
